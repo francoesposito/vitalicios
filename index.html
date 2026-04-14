@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalicios - Club Atlético Talleres (R.E.)</title>
+    
+    <!-- Fuentes Modernas y Legibles (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de Estilos de la página -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Club Atlético Talleres</h1>
+            <h2>Comisión de Vitalicios</h2>
+        </div>
+    </header>
+
+    <!-- Contenido Principal: Aquí irán las noticias -->
+    <main class="main-container">
+        
+        <!-- Sección de Búsqueda y Filtros -->
+        <section class="filtros-container">
+            <h3 class="filtros-titulo">Buscar Novedades</h3>
+            <div class="filtros-inputs">
+                <input type="text" id="filtro-texto" placeholder="Buscar por palabras... (Ej: Asamblea, Cena)">
+                <input type="text" id="filtro-fecha" placeholder="Filtrar por fecha... (Ej: Abril, 2026)">
+            </div>
+        </section>
+
+        <!-- El div container generará las noticias usando JavaScript -->
+        <section id="noticias-container" class="noticias-list">
+            <!-- Las noticias se inyectarán aquí mecánicamente -->
+            <div class="loading-message">Cargando las últimas novedades...</div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p><strong>Comisión de Vitalicios</strong> - Club Atlético Talleres (Remedios de Escalada)</p>
+            <p>Timote y Manuel Castro, Remedios de Escalada, Buenos Aires.</p>
+        </div>
+    </footer>
+
+    <!-- Archivo de Datos de Noticias (Tiene que ir primero para que app.js lo lea) -->
+    <script src="./js/noticias.js"></script>
+    <!-- Archivo de Lógica para pintar las noticias -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
