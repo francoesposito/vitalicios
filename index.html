@@ -23,8 +23,13 @@
     <!-- Encabezado de la página -->
     <header class="main-header">
         <div class="header-content">
-            <h1>Club Atlético Talleres</h1>
-            <h2>Comisión de Vitalicios</h2>
+            <div class="header-branding">
+                <img src="./img/icon.png" alt="Escudo de Talleres (R.E.)" class="header-logo">
+                <div class="header-text">
+                    <h1>Club Atlético Talleres</h1>
+                    <h2>Comisión de Vitalicios</h2>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -45,6 +50,11 @@
             <!-- Las noticias se inyectarán aquí mecánicamente -->
             <div class="loading-message">Cargando las últimas novedades...</div>
         </section>
+
+        <!-- Botón para ver más noticias -->
+        <div class="pagination-container">
+            <button id="btn-cargar-mas" class="btn-primario" style="display: none;">Ver noticias más antiguas</button>
+        </div>
     </main>
 
     <!-- Pie de página -->
@@ -54,6 +64,9 @@
             <p>Timote y Manuel Castro, Remedios de Escalada, Buenos Aires.</p>
         </div>
     </footer>
+
+    <!-- Botón Flotante para Volver Arriba -->
+    <button id="btn-volver-arriba" class="btn-flotante" aria-label="Volver arriba" title="Volver arriba">↑</button>
 
     <!-- Archivo de Datos de Noticias (Tiene que ir primero para que app.js lo lea) -->
     <script src="./js/noticias.js"></script>

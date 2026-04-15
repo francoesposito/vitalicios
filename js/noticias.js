@@ -14,20 +14,33 @@
  * 
  * TIPS DE CONTENIDO:
  * - podés usar \n para hacer saltos de línea y separar en párrafos.
+ * - Podés agregar IMPORTANTE: agregando    importante: true,
+ * - Podés agregar FOTOS, agregando         imagen: "./img/mifoto.jpg", 
+ * - Si pones un link completo (ej: https://... ) se iluminará de rojo y será clickeable automáticamente.
  * ============================================================================
  */
 
 const listaDeNoticias = [
     {
-        titulo: "¡Bienvenidos a nuestro nuevo canal de comunicación!",
+        importante: false,
+        titulo: "Artículo de prueba",
         fecha: "14 de Abril de 2026",
-        contenido: "Hoy inauguramos formalmente este nuevo espacio web.\n\nDesde la Comisión de Vitalicios del Club Atlético Talleres queríamos contar con una herramienta moderna, pero sumamente fácil de leer y navegar, pensada exclusivamente en las necesidades de nuestros socios mayores.\n\nA través de esta página estaremos comunicando fechas de asambleas, reuniones, eventos sociales, proyectos de obras impulsados por vitalicios, e información general sobre la actualidad de nuestra amada institución.\n\n¡Los invitamos a revisar esta página periódicamente!"
+        imagen: "./img/imgart1.png",
+        contenido: "Este es un artíbulo de prueba de la nueva página de los vitalicios de talleres!!\n\nhttps://talleres.org.ar"
     },
     {
+        importante: true,
         titulo: "Cena Anual de Vitalicios: Reserva tu lugar",
         fecha: "10 de Abril de 2026",
         contenido: "Recordamos a toda la familia albirroja que ya se encuentran a la venta las tarjetas para la tradicional Cena Anual de Vitalicios que se desarrollará en el salón del primer piso de la Sede Social.\n\nEl menú consistirá en empanadas de entrada, pernil de cerdo braseado de plato principal, bebida (vino, cerveza y gaseosas libres) y postre. Contaremos con la presencia de directivos y ex jugadores homenajeados de nuestro club.\n\nPara reservar tu tarjeta, acercate de martes a viernes a la secretaría del club. \n\n¡Te esperamos para compartir una noche a puro Talleres!"
+    },
+    {
+        importante: true,
+        titulo: "Reunión el Martes 21 de Abril",
+        fecha: "14 de Abril de 2026",
+        contenido: "El martes hay reunión en el Club Atlético Talleres."
     }
+
 ];
 
 // No borrar esta línea final: exporta las noticias para que app.js pueda leerlas.
